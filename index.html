@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishv Book Publication</title>
+<meta name="theme-color" content="#111a2d">
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f4f6fa;
+ color:#1c2635;
+ line-height:1.6;
+}
+header{
+ background:white;
+ padding:18px 20px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ position:sticky;
+ top:0;
+ z-index:10;
+ box-shadow:0 2px 8px #0001;
+}
+.logo{font-size:27px;font-weight:bold}
+.logo span{color:#2865ce}
+.menu{font-size:28px;border:0;background:white}
+nav{display:none;position:absolute;right:15px;top:65px;background:white;padding:15px;border-radius:12px;box-shadow:0 5px 20px #0002}
+nav.open{display:grid}
+nav a{padding:8px;text-decoration:none;color:#222}
+.hero{
+ background:linear-gradient(135deg,#111a2d,#1d2a42);
+ color:white;
+ padding:45px 20px 55px;
+}
+.wrap{max-width:1100px;margin:auto}
+.crumb{color:#bac6d9;margin-bottom:30px}
+.tag{color:#a9bee4;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(32px,6vw,48px);line-height:1.2}
+.gst{font-size:20px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.btn{
+ display:inline-block;
+ padding:13px 20px;
+ border-radius:12px;
+ font-weight:bold;
+ text-decoration:none;
+ color:white;
+}
+.green{background:#16a34a}
+.blue{background:#1689c8}
+.dark{background:#29364d;border:1px solid #536078}
+.facts{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:15px;
+ margin-top:40px;
+}
+.fact{border-left:4px solid #526b91;padding-left:12px;color:#bbc8da}
+.fact strong{display:block;color:white;font-size:17px}
+main{max-width:1100px;margin:25px auto;padding:0 18px}
+.tabs{
+ display:flex;
+ overflow-x:auto;
+ gap:10px;
+ background:white;
+ padding:12px;
+ border-radius:15px;
+ position:sticky;
+ top:70px;
+ z-index:5;
+}
+.tabs a{
+ white-space:nowrap;
+ text-decoration:none;
+ color:#2865ce;
+ padding:10px;
+ font-weight:bold;
+}
+.card{
+ background:white;
+ padding:25px;
+ margin:24px 0;
+ border:1px solid #e1e6ed;
+ border-radius:20px;
+ box-shadow:0 5px 18px #00000008;
+ scroll-margin-top:145px;
+}
+.label{color:#84909e;font-size:14px}
+h2{font-size:30px;margin:8px 0 20px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:14px;
+}
+.item{
+ border:1px solid #e1e6ed;
+ border-radius:13px;
+ padding:17px;
+}
+.value{font-size:18px;font-weight:bold;overflow-wrap:anywhere}
+.notice{
+ background:#effbf3;
+ border-left:6px solid #16a34a;
+ padding:18px;
+ color:#207545;
+ font-weight:bold;
+ border-radius:12px;
+ margin:20px 0;
+}
+.empty{
+ border:1px dashed #ccd5df;
+ padding:30px 15px;
+ text-align:center;
+ border-radius:15px;
+ color:#718096;
+}
+footer{
+ background:#111a2d;
+ color:white;
+ padding:30px 20px;
+ margin-top:35px;
+}
+.small{font-size:13px;color:#8996a8}
+@media(max-width:600px){
+ .facts{grid-template-columns:1fr 1fr}
+ .grid{grid-template-columns:1fr}
+ .card{padding:20px 16px}
+ h2{font-size:26px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">Vishv<span>Book</span></div>
+ <button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+ <nav id="nav">
+  <a href="#overview">Overview</a>
+  <a href="#details">Company Details</a>
+  <a href="#services">Services</a>
+  <a href="#support">Support</a>
+ </nav>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div class="crumb">Company Information › India</div>
+  <div class="tag">COMPANY PROFILE</div>
+  <h1>VISHV BOOK PUBLICATION</h1>
+  <p class="gst">GST: <strong>07AADCV7536Q1ZK</strong></p>
+
+  <div class="buttons">
+   <a class="btn green" target="_blank"
+   href="https://t.me/Vishvbookpublications3/?text=New_Registration✍️">
+   Apply Now ✍️</a>
+
+   <a class="btn dark" target="_blank"
+   href="https://t.me/+pQ0bomAQQuc3MDE1">
+   Telegram Channel</a>
+  </div>
+
+  <div class="buttons">
+   <a class="btn blue" target="_blank"
+   href="https://t.me/Vishvbookpublications3/?text=New_Registration✍️">
+   Telegram Support</a>
+
+   <a class="btn dark" href="#details">Company Information</a>
+  </div>
+
+  <div class="facts">
+   <div class="fact">Company Name
+    <strong>Vishv Book Publication</strong>
+   </div>
+   <div class="fact">GST Number
+    <strong>07AADCV7536Q1ZK</strong>
+   </div>
+   <div class="fact">Company Profile
+    <strong>India</strong>
+   </div>
+  </div>
+ </div>
+</section>
+
+<main>
+
+ <div class="tabs">
+  <a href="#overview">Company Information</a>
+  <a href="#details">Company Details</a>
+  <a href="#services">Services</a>
+  <a href="#support">Support</a>
+ </div>
+
+ <section class="card" id="overview">
+  <div class="tag">OVERVIEW</div>
+  <h2>Company Information</h2>
+
+  <div class="item">
+   <div class="label">Company Name</div>
+   <div class="value">VISHV BOOK PUBLICATION</div>
+  </div>
+
+  <div class="notice">
+   कृपया काम की पूरी जानकारी और नियम पढ़ने के बाद ही आवेदन करें।
+   किसी भी फीस का भुगतान करने से पहले कंपनी की जानकारी सत्यापित करें।
+  </div>
+
+  <p>
+   Welcome to Vishv Book Publication.
+   For registration and work-related information,
+   contact our Telegram support team.
+  </p>
+ </section>
+
+ <section class="card" id="details">
+  <div class="tag">PROFILE DETAILS</div>
+  <h2>Company Details</h2>
+
+  <div class="grid">
+   <div class="item">
+    <div class="label">Company Name</div>
+    <div class="value">Vishv Book Publication</div>
+   </div>
+
+   <div class="item">
+    <div class="label">GST Number (Provided)</div>
+    <div class="value">07AADCV7536Q1ZK</div>
+   </div>
+
+   <div class="item">
+    <div class="label">Registration Date</div>
+    <div class="value">Not Provided</div>
+   </div>
+
+   <div class="item">
+    <div class="label">Registration Number</div>
+    <div class="value">Not Provided</div>
+   </div>
+
+   <div class="item">
+    <div class="label">Registered Address</div>
+    <div class="value">To be updated</div>
+   </div>
+
+   <div class="item">
+    <div class="label">Company Category</div>
+    <div class="value">To be verified</div>
+   </div>
+  </div>
+  <p class="small">
+   GST और कंपनी रजिस्ट्रेशन की जानकारी आधिकारिक सरकारी पोर्टल से सत्यापित करें।
+  </p>
+ </section>
+
+ <section class="card" id="services">
+  <div class="tag">WORK INFORMATION</div>
+  <h2>Services & Work Details</h2>
+
+  <div class="empty">
+   <h3>Work Information</h3>
+   Work description, eligibility, payment terms
+   और नियम यहाँ अपडेट किए जा सकते हैं।
+  </div>
+
+  <div class="grid" style="margin-top:15px">
+   <div class="item">
+    <div class="label">Work Type</div>
+    <div class="value">To be updated</div>
+   </div>
+
+   <div class="item">
+    <div class="label">Payment Schedule</div>
+    <div class="value">To be updated</div>
+   </div>
+  </div>
+ </section>
+
+ <section class="card" id="support">
+  <div class="tag">CONTACT & SUPPORT</div>
+  <h2>Telegram Support</h2>
+
+  <p>हमारे Telegram चैनल से जुड़ें और रजिस्ट्रेशन की जानकारी प्राप्त करें।</p>
+
+  <div class="buttons">
+   <a class="btn blue" target="_blank"
+   href="https://t.me/+pQ0bomAQQuc3MDE1">
+   ✈️ Join Telegram Channel</a>
+
+   <a class="btn green" target="_blank"
+   href="https://t.me/Vishvbookpublications3/?text=New_Registration✍️">
+   Registration Support</a>
+  </div>
+
+  <div class="item">
+   <div class="label">Telegram Username</div>
+   <div class="value">@Vishvbookpublications3</div>
+  </div>
+ </section>
+
+ <p class="small">
+  Disclaimer: This is an independently created company profile website.
+  It is not a government website. Company and GST information
+  should be independently verified.
+ </p>
+
+</main>
+
+<footer>
+ <div class="wrap">
+  <strong>Vishv Book Publication</strong>
+  <p>Company Information & Support</p>
+  <div class="small">
+   © <span id="year"></span> Vishv Book Publication
+  </div>
+ </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+document.querySelectorAll("nav a").forEach(function(link){
+ link.addEventListener("click",function(){
+  document.getElementById("nav").classList.remove("open");
+ });
+});
+</script>
+
+</body>
+</html>
